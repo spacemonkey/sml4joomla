@@ -12,3 +12,7 @@ First up are two main helpers:
 * JRestRequest - Simple class for dealing with RESTful interfaces
 
 There's also a sample config file (smlconfig.php) used for any stored configuration required by any of the libraries. At present this is just needed for MongoDB but may grow in the future.
+
+h2. Instructions
+
+Download this _sml_ folder and plop it in your _libraries_ folder at your Joomla! site's docroot. You are now free to load these libraries and use them in your extensions. Tutorials and documentation in the wiki are on the way.
