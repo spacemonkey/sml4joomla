@@ -1,0 +1,7 @@
+Welcome to the SML Libraries for Joomla! project.
+
+h2. Wha?
+
+This is a collection of helper libraries that provide just a tiny little comfort to the active Joomla! developer. Currently the sml4joomla libraries are for the J!1.5 series, however when J!1.6 looks less gooey inside, they will be refactored to support any new goodness found in that release.
+
+Most importantly, this isn't the Joomla! project, this is not official, this could very well be a figment of my fragile eggshell mind. Use with caution.
