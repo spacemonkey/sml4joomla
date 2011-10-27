@@ -5,24 +5,24 @@
  * @note This class is very much a work in progress
  * @license http://www.opensource.org/licenses/bsd-license.php
  * @copyright Spacemonkey Labs, LLC. All rights reserved.
- * 
+ *
  * This class is a descendant of code written for integrating
  * MongoDB and Joomla, contributed by Colin Kroll.
  */
 class JMongo {
-	
+
 	private static $instance;
-	
+
 	private function __construct( ) { }
-	
+
 	/**
 	 * Creates a mongo connection and connects.
-	 * 
+	 *
 	 * @throws MongoConnectionException, Exception
 	 * @return MongoDB database object
 	 */
 	private function createInstance( ) {
-		
+
 		//Pull these from a config file
 		jimport('sml.smlconfig');
 		$conf = new SMLConfig();
@@ -31,7 +31,7 @@ class JMongo {
 		$persistent = $conf->mongo_persistent;
 		$paired = $conf->mongo_paired;
 		//End config entries
-				
+
 		if ( count( $serverList ) > 2 ) {
 			throw new Exception( "Connection can be established to 2 or fewer instances only." );
 		}
@@ -50,11 +50,11 @@ class JMongo {
 		}
 		return $db;
 	}
-	
+
 	/**
-	 * Returns the connected mongo instance if it exists, otherwise 
+	 * Returns the connected mongo instance if it exists, otherwise
 	 * creates it.
-	 * 
+	 *
 	 * @param $serverList
 	 * @param $persistent
 	 * @return unknown_type
