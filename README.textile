@@ -16,3 +16,8 @@ There's also a sample config file (smlconfig.php) used for any stored configurat
 h2. Instructions
 
 Download this _sml_ folder and plop it in your _libraries_ folder at your Joomla! site's docroot. You are now free to load these libraries and use them in your extensions. Tutorials and documentation in the wiki are on the way.
+
+
+For joomla 1.7
+
+Rename the file from jmongo.php to mongo.php and change the class name SMLConfig to JSMLConfig
